@@ -1,0 +1,1 @@
+#cmakedefine FILE_UPLOAD_PATH "@FILE_UPLOAD_PATH@"

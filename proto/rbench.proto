@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service RBench { rpc ProcessFile(InputFile) returns (BenchmarkResults); }
+
+message InputFile
+{
+  string filename = 1;
+  bytes file_data = 2;
+}
+
+message BenchmarkResults
+{
+  float Energy = 1;
+  float Time = 2;
+}
